@@ -80,6 +80,32 @@ ul.bul{padding-left: 22px; margin:10px 0}
 .small{font-size:12px; color:var(--muted)}
 .backtop{margin-top:16px}
 .backtop a{font-size:13px}
+figure.media {
+  margin: 16px 0 22px;
+}
+
+figure.media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 920px;   /* limita no desktop */
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+figure.media figcaption {
+  max-width: 920px;
+  margin: 10px auto 0;
+  font-size: 0.95em;
+  opacity: 0.85;
+  text-align: center;
+}
+
+/* Versão menor (para diagramas compactos) */
+figure.media.compact img {
+  max-width: 720px;
+}
+
 </style>
 </head>
 <body>
@@ -139,6 +165,11 @@ ul.bul{padding-left: 22px; margin:10px 0}
 <h2 id="1-estrutura-do-grupo">1. ESTRUTURA DO GRUPO</h2>
 <h3 id="1-1-grupo-geral-tsg">1.1. Grupo Geral — TSG</h3>
 <ol class="alpha">
+  <figure class="media">
+  <img src="img/globo.png" alt="Estrutura do TSG">
+  <figcaption><strong>Figura 1.</strong> Estrutura do TSG.</figcaption>
+</figure>
+
 <li>Reúne todos os membros interessados em participar do sistema de compartilhamento.</li>
 <li>É o espaço principal para comunicação, formação de Grupos Específicos e organização geral.</li>
 <li>Os Administradores são responsáveis por aplicar as regras e mediar conflitos quando necessário.</li>

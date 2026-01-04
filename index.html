@@ -41,14 +41,17 @@ a:hover{text-decoration:underline}
   font-size:13px;
 }
 .grid{display:grid; grid-template-columns: 1fr; gap:16px; margin-top:16px}
-@media (min-width: 980px){ .grid{grid-template-columns: 310px 1fr;} }
+@media (min-width: 980px){
+  .grid{grid-template-columns: 310px 1fr;}
+  .toc{position:sticky; top:16px; max-height: calc(100vh - 32px); overflow:auto;}
+}
+
 .toc{
-  position:sticky; top:16px;
-  background: rgba(18,26,51,.78);
+  position: static;
+  top: auto;
+  background: rgba(18,26,51,.55);
   border:1px solid var(--line);
   border-radius:16px;
-  padding:14px 14px 12px;
-  height: fit-content;
 }
 .toc h2{margin:0 0 10px; font-size:16px}
 .toc ul{margin:0; padding-left:16px}
